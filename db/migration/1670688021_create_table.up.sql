@@ -1,0 +1,7 @@
+-- up
+CREATE TABLE IF NOT EXISTS object (
+	o_id INTEGER NOT NULL,
+	last_seen TIMESTAMPTZ NOT NULL
+);
+
+ALTER TABLE object ADD UNIQUE (o_id);
